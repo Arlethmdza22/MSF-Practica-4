@@ -8,18 +8,24 @@ Mendoza Perez Arleth Alejandra
 Ingeniería Biomédica, Departamento de Ingeniería Eléctrica y Electrónica, Tecnológico Nacional de México/IT Tijuana. Blvd. Alberto Limón Padilla s/n, Tijuana, C.P. 22454, B.C., México. Email: L20211984@tectijuana.edu.mx
 
 ## Objetivos general
-Diseñar un controlador que permita formular un protocolo de tratamiento para que un paciente con hipertension (caso) presente la misma presion alveolar que un individuo sano (control)
+Diseñar un controlador que permita formular un protocolo de tratamiento para que un paciente con hipertension (caso) y con hipotension (caso) presente la misma presion cardiaca que un individuo sano (control).
 
 ## Actividades
-1. Calcular analiticamente la funcion de transferencia del sistema cardiovascular.
-2. Establecer el modelo de ecuaciones integro-diferenciales.
-3. Determinar el error en estad estacionario y la estabilidad del sistema en lazo abierto.
-4. Construir el diagrama de bloques como se indica en la Figura 5.4.
-5. Diseñar el controlador con Simulink utilizando el bloque PID controller y la herramienta Tune para sintonizar los valores optimos para cada una de las ganancias kp, kI y kD.
-6. Ilustrar el cambio del flujo de aire y el volumen tidal en respuesta a las siguientes formas de onda de presion sinusoidal en la apertuda de la via aerea.
-7. Determinar la respuesta a la funcion sinosoidal en python, Simulink y Multisim en lazo abierto y en lazo cerrado con el controlador.
-8. Elaborar el diagrama biologico del sistema con BioRender.
-9. Discutir los resultados obtenido en la experimentacion in silico y elaborar el reporte de la practica. 
+1. Calcular analíticamente la función de transferencia del sistema cardiovascular.
+
+2. Determinar el error en estado estacionario y la estabilidad del sistema en lazo abierto.
+
+3. Construir el diagrama de bloques como se indica en el diagrama 5.8.
+
+4. Diseñar el controlador con Simulink utilizando el bloque *PID Controller* y la herramienta *Tune* para sintonizar los valores óptimos para cada una de las ganancias \(k_P\), \(k_I\) y \(k_D\).
+
+5. Ilustrar el cambio de la presión sobre la distensibilidad arterial \([P_p(t)]\) en respuesta a la presión arterial de entrada \(P_a(t)\). Utilice la función de entrada *Uniform Random Number* con la siguiente configuración: mín = -0.2 V, máx = 1 V, *seed* = 106, *Sample time* = 0.5.
+
+6. Determinar la respuesta a la función en el intervalo \(t \in [0, 15]\) (segundos) en Python, Simulink y Multisim en lazo abierto y en lazo cerrado con el controlador.
+
+7. Elaborar el diagrama fisiologico en biorender.com.
+
+8. Discutir los resultados obtenidos en la experimentacion insilico.
 
 ## Docente
 Dr. Paul A. Valle
